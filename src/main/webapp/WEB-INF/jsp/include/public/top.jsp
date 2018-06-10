@@ -15,7 +15,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">红薯实验室 v1.0 -Alpha</a>
+        <a class="navbar-brand" href="index.jsp">红薯实验室 v1.0 -Alpha</a>
     </div>
     <!-- /.navbar-header -->
 

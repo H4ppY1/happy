@@ -15,7 +15,7 @@ public class AssetServiceImpl implements AssetService {
     private AssetMapper assetMapper;
 
     @Override
-    public List<Asset> list() {
+    public List<Object> list() {
         return assetMapper.list();
     }
 }

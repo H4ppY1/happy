@@ -5,5 +5,5 @@ import com.h4ppY.happy.pojo.Asset;
 import java.util.List;
 
 public interface AssetMapper {
-    List<Asset> list();
+    List<Object> list();
 }

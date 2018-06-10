@@ -21,11 +21,11 @@
     <%--</div>--%>
         <div id="page-wrapper">
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                    <i class="fa fa-bar-chart-o fa-fw"></i> 资产管理
                     <div class="pull-right">
                         <div class="btn-group">
                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -48,40 +48,17 @@
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
+                    <div class="panel input-group custom-search-form col-lg-4">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <a id = "assetSearch" class="btn btn-default" type="button">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </span>
+                    </div>
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="table-responsive">
-
-                                <%--<table class="table table-striped table-bordered table-hover  table-condensed">--%>
-                                    <%--<thead>--%>
-                                    <%--<tr class="success">--%>
-                                        <%--<th>ID</th>--%>
-                                        <%--<th>图片</th>--%>
-                                        <%--<th>分类名称</th>--%>
-                                        <%--<th>属性管理</th>--%>
-                                        <%--<th>产品管理</th>--%>
-                                        <%--<th>编辑</th>--%>
-                                        <%--<th>删除</th>--%>
-                                    <%--</tr>--%>
-                                    <%--</thead>--%>
-                                    <%--<tbody>--%>
-                                    <%--<c:forEach items="${cs}" var="c">--%>
-
-                                        <%--<tr>--%>
-                                            <%--<td>${c.id}###${c.name}</td>--%>
-                                            <%--<td><img height="40px" src="img/category/${c.id}.jpg"></td>--%>
-                                            <%--<td>${c.name}</td>--%>
-
-                                            <%--<td><a href="admin_property_list?cid=${c.id}"><span class="glyphicon glyphicon-th-list"></span></a></td>--%>
-                                            <%--<td><a href="admin_product_list?cid=${c.id}"><span class="glyphicon glyphicon-shopping-cart"></span></a></td>--%>
-                                            <%--<td><a href="admin_category_edit?id=${c.id}"><span class="glyphicon glyphicon-edit"></span></a></td>--%>
-                                            <%--<td><a deleteLink="true" href="admin_category_delete?id=${c.id}"><span class=" 	glyphicon glyphicon-trash"></span></a></td>--%>
-
-                                        <%--</tr>--%>
-                                    <%--</c:forEach>--%>
-                                    <%--</tbody>--%>
-                                <%--</table>--%>
-
 
                                 <table class="table table-bordered table-hover table-striped">
                                     <thead>
@@ -123,3 +100,55 @@
     </div>
     </div>
 </div>
+
+<script>
+    $(function(){
+        $("a#assetSearch").click(function(){
+            var data =
+            {
+                "start": "1",
+                "count": "3",
+                "haopeng": "nmb"
+            };
+            $.ajax({
+                type : "post",
+                url : "assetSearch",
+                data : data,
+                async : false,
+                contentType: "application/json; charset=utf-8",
+                dataType : "json",
+                success: function(result){
+                    // debugger;
+                    // alert(result);
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown){
+                    //通常情况下textStatus和errorThrown只有其中一个包含信息
+                    this;   //调用本次ajax请求时传递的options参数
+                }
+            }).done(
+                function(result){
+                    debugger;
+                    alert(result[0].name);
+                }
+                // function (result) {
+                //     alert(result);
+                // }
+
+
+                // $.each(data, function (i, n) {
+                //     var row = $("#template").clone();
+                //     row.find("#id").text(n.id);
+                //     row.find("#url").text(n.url);
+                //     row.find("#title").text(n.title);
+                //     row.appendTo("#datas");//添加到模板的容器中
+                // });
+
+
+            );
+// href="assetSearch"
+        });
+    });
+
+
+
+</script>
