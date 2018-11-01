@@ -16,7 +16,7 @@ public class ForeController {
 
     @RequestMapping("forehome")
     public String forehome (){
-        return "fore/home";
+        return "home";
     }
 
     @RequestMapping("dataUpload")
