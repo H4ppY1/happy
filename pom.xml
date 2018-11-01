@@ -170,6 +170,13 @@
       <artifactId>fastjson</artifactId>
       <version>${fastjson.version}</version>
     </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi</artifactId>
+		<version>3.6</version>
+	</dependency>
   </dependencies>
   <build>
     <finalName>happy</finalName>

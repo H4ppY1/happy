@@ -13,7 +13,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 <head>
-    <title>红薯实验室</title>
+    <title>我想吃红薯</title>
     <link href="css/bootstrap/3.3.7/bootstrap.min.css" rel="stylesheet">
     <!-- MetisMenu CSS -->
     <link href="css/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -44,7 +44,18 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/sb-admin-2/sb-admin-2.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
 
+<!-- Latest compiled and minified JavaScript -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+
+<!-- Latest compiled and minified Locales -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/public/hpTable.js"></script>
+<link rel="stylesheet" href="js/layui-2.4.4/css/layui.css">
+<script type="text/javascript" src="js/layui-2.4.4/layui.js"></script>
 </head>
 <body>
 </body>
