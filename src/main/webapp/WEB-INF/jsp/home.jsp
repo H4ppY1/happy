@@ -110,5 +110,6 @@
 <div class="site-mobile-shade"></div>
 
 <script type="text/javascript" src="layui-2.4.4/layui.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/ui/index.js"></script>
+<script type="text/javascript" src="js/ui/bodyTab.js"></script>
 </body>
