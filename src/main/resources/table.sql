@@ -35,7 +35,15 @@ create table alipayRecord (
 ) default charset = UTF8;
 
 
-
+-- 字典表
+create table goods (
+    goodsId       int not null auto_increment,  -- id
+    goodsName     varchar(128),                 -- 品名
+    specification varchar(10),                  -- 规格
+    guidePrice    decimal(8,2),                 -- 指导价
+    stock         int,                          -- 库存
+  primary key (goodsId)
+) default charset = UTF8;
 
 
 

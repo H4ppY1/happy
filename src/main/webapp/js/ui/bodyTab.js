@@ -65,7 +65,7 @@ layui.define(["element","jquery"],function(exports){
 			openTabNum = that.tabConfig.openTabNum;
 			tabFilter = that.tabConfig.tabFilter;
 		// $(".layui-nav .layui-nav-item a").on("click",function(){
-			if(_this.find("i.iconfont,i.layui-icon").attr("data-icon") != undefined){
+		// 	if(_this.find("i.iconfont,i.layui-icon").attr("data-icon") != undefined){
 				var title = '';
 				if(that.hasTab(_this.find("cite").text()) == -1 && _this.siblings("dl.layui-nav-child").length == 0){
 					if($(".layui-tab-title.top_tab li").length == openTabNum){
@@ -108,7 +108,7 @@ layui.define(["element","jquery"],function(exports){
 					window.sessionStorage.setItem("curmenu",JSON.stringify(curmenu));  //当前的窗口
 					element.tabChange(tabFilter, that.getLayId(_this.find("cite").text()));
 				}
-			}
+			// }
 		// })
 	}
 	$("body").on("click",".top_tab li",function(){

@@ -74,7 +74,7 @@
                 </li>
                 <li class="layui-nav-item" pc>
                     <a href="javascript:;">
-                        <img src="images/face.jpg" class="layui-circle" width="35" height="35">
+                        <img src="img/face.jpg" class="layui-circle" width="35" height="35">
                         <cite>超级管理员</cite>
                     </a>
                     <dl class="layui-nav-child">
@@ -88,7 +88,7 @@
         </div>
     </div>
     <!-- 左侧导航 -->
-    <%@include file="include/menu.jsp"%>
+    <%@include file="../jsp/include/menu.jsp"%>
     
     <!-- 右侧内容 -->
     <div class="layui-body layui-form">

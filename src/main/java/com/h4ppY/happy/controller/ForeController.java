@@ -1,18 +1,16 @@
 package com.h4ppY.happy.controller;
 
-import com.h4ppY.happy.mapper.AssetMapper;
-import com.h4ppY.happy.service.AssetService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("")
 public class ForeController {
-
-    @Autowired
-    private AssetService assetService;
 
     @RequestMapping("forehome")
     public String forehome (){
@@ -26,7 +24,17 @@ public class ForeController {
 
     @RequestMapping("assetManage")
     public String foreAssetManage (Model model){
-        model.addAttribute("assetList", assetService.list());
+//        model.addAttribute("assetList", assetService.list());
         return "fore/assetManageFore";
+    }
+
+    @RequestMapping("views/pages/test")
+    public void list(ModelMap model, HttpServletRequest request) {
+        model.put("isGeneral", true);
+    }
+
+    @RequestMapping("views/pages/test.jsp")
+    public void list2(ModelMap model, HttpServletRequest request) {
+        model.put("isGeneral", true);
     }
 }

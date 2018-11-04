@@ -46,7 +46,7 @@
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="typeAliasesPackage" value="com.h4ppY.happy.pojo" />
 		<property name="dataSource" ref="dataSource"/>
-		<property name="mapperLocations" value="classpath:mapper/*.xml"/>
+		<property name="mapperLocations" value="classpath:dao/*.xml"/>
 		<!--分页插件，目前先注释，后面重构的时候才会使用
 		<property name="plugins">
 			<array>
@@ -63,7 +63,13 @@
 
 	<!--Mybatis的Mapper文件识别-->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.h4ppY.happy.mapper"/>
+		<property name="basePackage" value="com.h4ppY.happy.dao"/>
 	</bean>
+    <bean id="internalViewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="order" value="100" />
+        <property name="prefix" value="/WEB-INF/views/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
 
 </beans>

@@ -1,6 +1,6 @@
 var $;
 layui.config({
-    base : "js/"
+    base : "js/ui/"
 }).use(['form','element','layer','jquery','bodyTab'],function(){
     var form = layui.form,
         layer = layui.layer,
