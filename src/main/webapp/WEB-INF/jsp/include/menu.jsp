@@ -11,9 +11,9 @@
 		<li class="layui-nav-item layui-nav-itemed">
 			<a href="javascript:;">默认展开</a>
 			<dl class="layui-nav-child">
-				<dd><a href="javascript:;" data-url="404.html"><i class="layui-icon layui-icon-face-smile" data-icon = "&#xe60c"></i><cite>选项1</cite></a></dd>
-				<dd><a href="javascript:;" data-url="home.jsp">选项2</a></dd>
-				<dd><a href="">跳转</a></dd>
+				<dd><a href="javascript:;" data-url="pages/stockControl"><i class="layui-icon layui-icon-face-smile" data-icon = "&#xe60c"></i><cite>选项1</cite></a></dd>
+				<dd><a href="javascript:;" data-url="pages/test"><i class="layui-icon layui-icon-face-smile" data-icon = "&#xe60c"></i><cite>选项2</cite></a></dd>
+		
 			</dl>
 		</li>
 		<li class="layui-nav-item">

@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -28,13 +29,13 @@ public class ForeController {
         return "fore/assetManageFore";
     }
 
-    @RequestMapping("views/pages/test")
-    public void list(ModelMap model, HttpServletRequest request) {
-        model.put("isGeneral", true);
-    }
-
-    @RequestMapping("views/pages/test.jsp")
-    public void list2(ModelMap model, HttpServletRequest request) {
-        model.put("isGeneral", true);
-    }
+//    @RequestMapping("pages/test")
+//    public String list(ModelMap model, HttpServletRequest request) {
+//    	return "pages/test";
+//    }
+    
+    @RequestMapping("/pages/{p}")
+	public String page(@PathVariable String p){
+		return "pages/" + p;
+	}
 }

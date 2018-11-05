@@ -12,13 +12,13 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping("")
+@RequestMapping("/pages")
 public class GoodsController {
 
     @Autowired
     GoodsService goodsService;
 
-    @RequestMapping("goods.json")
+    @RequestMapping("/goods.json")
     @ResponseBody
     public String goodsSearch(){
         List<Map<String, Object>> data = goodsService.goodsSearch();
