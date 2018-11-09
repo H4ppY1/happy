@@ -47,18 +47,19 @@
 		<property name="typeAliasesPackage" value="com.h4ppY.happy.pojo" />
 		<property name="dataSource" ref="dataSource"/>
 		<property name="mapperLocations" value="classpath:dao/*.xml"/>
-		<!--分页插件，目前先注释，后面重构的时候才会使用
+
 		<property name="plugins">
 			<array>
 				<bean class="com.github.pagehelper.PageInterceptor">
 					<property name="properties">
 						<value>
+							reasonable=true
 						</value>
 					</property>
 				</bean>
 			</array>
 		</property>
-		-->
+
 	</bean>
 
 	<!--Mybatis的Mapper文件识别-->

@@ -58,6 +58,11 @@
 .layui-fluid {
 	padding: 15px;
 }
+.layui-layout-admin .layui-body {
+    top: 60px;
+    bottom: 0px
+}
+
 
 
 /*main.html*/
