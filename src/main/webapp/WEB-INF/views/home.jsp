@@ -21,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
    <!-- <link rel="icon" href="favicon.ico">-->
     <link rel="stylesheet" href="layui-2.4.4/css/layui.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/layuiadmin/index.css">
 </head>
 <body class="main_body">
 <div class="layui-layout layui-layout-admin">
@@ -33,27 +33,7 @@
             <div class="layui-form component">
                 <select name="modules" lay-verify="required" lay-search="">
                     <option value="">直接选择或搜索选择</option>
-            <!--        <option value="1">layer</option>
-                    <option value="2">form</option>
-                    <option value="3">layim</option>
-                    <option value="4">element</option>
-                    <option value="5">laytpl</option>
-                    <option value="6">upload</option>
-                    <option value="7">laydate</option>
-                    <option value="8">laypage</option>
-                    <option value="9">flow</option>
-                    <option value="10">util</option>
-                    <option value="11">code</option>
-                    <option value="12">tree</option>
-                    <option value="13">layedit</option>
-                    <option value="14">nav</option>
-                    <option value="15">tab</option>
-                    <option value="16">table</option>
-                    <option value="17">select</option>
-                    <option value="18">checkbox</option>
-                    <option value="19">switch</option>
-                    <option value="20">radio</option>
-                     -->
+            <%--<option value="1">layer</option>--%>
                 </select>
                 <i class="layui-icon">&#xe615;</i>
             </div>
@@ -73,7 +53,7 @@
                     <a href="javascript:;"><i class="iconfont icon-lock1"></i><cite>锁屏</cite></a>
                 </li>
                 <li class="layui-nav-item" pc>
-                    <a href="javascript:;">
+                    <a href="register">
                         <img src="img/face.jpg" class="layui-circle" width="35" height="35">
                         <cite>超级管理员</cite>
                     </a>

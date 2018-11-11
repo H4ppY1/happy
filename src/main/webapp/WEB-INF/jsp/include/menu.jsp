@@ -12,7 +12,7 @@
 			<a href="javascript:;">默认展开</a>
 			<dl class="layui-nav-child">
 				<dd><a href="javascript:;" data-url="pages/stockControl"><i class="layui-icon layui-icon-face-smile" data-icon = "&#xe60c"></i><cite>选项1</cite></a></dd>
-				<dd><a href="javascript:;" data-url="pages/test"><i class="layui-icon layui-icon-face-smile" data-icon = "&#xe60c"></i><cite>选项2</cite></a></dd>
+				<dd><a href="javascript:;" data-url="pages/register"><i class="layui-icon layui-icon-face-smile" data-icon = "&#xe60c"></i><cite>选项2</cite></a></dd>
 		
 			</dl>
 		</li>
