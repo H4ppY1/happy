@@ -45,7 +45,7 @@
 </body>
 
 <script type="text/html" id="orderOption">
-	<a class="layui-btn layui-btn-xs" lay-event="edit">加入订单</a>
+	<a class="layui-btn layui-btn-xs" lay-event="addToCart">加入订单</a>
 </script>
 
 
@@ -157,6 +157,23 @@
                     }
                     break;
             };
+		})
+		
+		table.on('tool(filterGoodsTable)',function(obj){
+			var layEvent = obj.event;
+			var data     = obj.data;
+			
+			$.ajax({
+                type : "post",
+                url : "addToCart.json",
+                async : true,
+                data : data,
+                dataType : "json"
+            }).done(
+                function(result){
+                	return;
+            });
+			
 		})
 
     });

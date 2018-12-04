@@ -18,6 +18,16 @@ public class ForeController {
         return "home";
     }
 
+    @RequestMapping("register")
+    public String registerRedirect(HttpServletRequest request){
+        return "register";
+    }
+
+    @RequestMapping("login")
+    public String loginRedirect(HttpServletRequest request){
+        return "login";
+    }
+
     @RequestMapping("dataUpload")
     public String foreDataUpload (){
         return "fore/dataUpload";
@@ -25,15 +35,9 @@ public class ForeController {
 
     @RequestMapping("assetManage")
     public String foreAssetManage (Model model){
-//        model.addAttribute("assetList", assetService.list());
         return "fore/assetManageFore";
     }
 
-//    @RequestMapping("pages/test")
-//    public String list(ModelMap model, HttpServletRequest request) {
-//    	return "pages/test";
-//    }
-    
     @RequestMapping("/pages/{p}")
 	public String page(@PathVariable String p){
 		return "pages/" + p;
